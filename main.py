@@ -1,13 +1,12 @@
 '''launch sight code for raspberry pi'''
 def main():
-    import RPi.GPIO as gpio
     import bluetooth
     import time
-    import PyGlow
+    import winsound
     phone_name = "BenPhone"
     rumble_pack_name ="HC-05"
     controller_name = "MOCUTE-032_B50-0407"
-    pyglow = PyGlow.PyGlow()
+
 
     phone_address = None
     rumble_pack_address = None
@@ -18,69 +17,47 @@ def main():
     for bdaddr in nearby_devices:
         if phone_name == bluetooth.lookup_name( bdaddr ):
             phone_address = bdaddr
-            pyglow.color("Yellow:", 100)
+            print("Phone found...")
 
         if rumble_pack_name == bluetooth.lookup_name( bdaddr ):
             rumble_pack_address = bdaddr
-            pyglow.color("Orange:", 100)
+            print("Rumble pack found...")
 
         if controller_name == bluetooth.lookup_name( bdaddr ):
             controller_address = bdaddr
-            pyglow.color("Green:", 100)
+            print("Controller found")
         
-        if phone_address is not None and rumble_pack_address is not None and controller_address is not None:
-            pyglow.color("Yellow:", 0)
-            pyglow.color("Orange:", 0)
-            time.sleep(3)
-            pyglow.color("All:", 0) 
 
+    while 1:
+        text = input("Enter start to continue, or quit to finish...")
+        #some sort of exit code
+        if text == "quit":
+            s.send(text)
+            break
 
-    #is the phone on and connected
-    if phone_address != None:
-    #start listening to the phone
-        port = 3
-        phone_s = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
-        phone_s.connect((phone_address, port))
+    #Did the phone tell us to start?
+        port2 = 1
+        if text == "start":
+        #send a message to the rumble pack
+            rumble_s = bluetooth.BluetoothSocket( bluetooth.RFCOMM )
+            rumble_s.connect((rumble_pack_address, port2))
+            print("Waiting for 20")
+            time.sleep(20)
+            rumble_s.send('1')
+            print("Playing wav!")
 
-        while 1:
-            text = raw_input()
-            #some sort of exit code
-            if text == "quit":
-                s.send(text)
-                break
+            #play the base wav file
+            winsound.PlaySound("launch bass boost long.wav", winsound.SND_FILENAME)
+            print("Stopping!")
+            rumble_s.send('0')
+            break
 
-        #Did the phone tell us to start?
-            port2 = 1
-            if text == "start":
-            #send a message to the rumble pack
-                rumble_s = bluetooth.BluetoothSocket( bluetooth.RFCOMM )
-                rumble_s.connect((rumble_pack_address, port2))
-                time.sleep(50)
-                rumble_s.send(1)
-
-                #start the fan
-                GPIO.setmode(GPIO.BCM)
-                GPIO.setwarnings(False)
-
-                #play the base wav file
+                
 
 
 
-#                #check if the phone told us to stop OR control stop
-#                if :
-#                #stop the fan
-#                    #stop the base track
-
-#                    #stop the rumble pack
-#                    port = 1
-#                    sock=bluetooth.BluetoothSocket( bluetooth.RFCOMM )
-#                    sock.connect((rumble_pack_address, port))
-#                    sock.send(1)
-#                    sock.close()
-
-
-
-#else:
+    else:
+        print("Phone not found...")
 ##Flash red or something
 #None
 
