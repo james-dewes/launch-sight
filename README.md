@@ -8,5 +8,8 @@ Creating a low cost, immersive experience of a rocket launch, combining sound, v
 ##Who is the project for?
 
 ##Shopping list
+| Item | Cost (Approx)  |
+|------|---------------:|
+|      | £              |
 
 ##To Do list
