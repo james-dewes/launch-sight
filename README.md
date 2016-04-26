@@ -32,6 +32,5 @@ From left to right Gavin, James, Ben and Jack
 ##To Do list
 
 ##The video
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=luciFKDGsFQ
-" target="_blank"><img src="http://img.youtube.com/vi/YluciFKDGsFQ/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=luciFKDGsFQ" target="_blank">
+<img src="http://img.youtube.com/vi/luciFKDGsFQ/1.jpg" alt="Launch video for a Saturn V" width="240" height="180" border="10" /></a>
