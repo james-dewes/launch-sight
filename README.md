@@ -1,4 +1,4 @@
-![logo:](https://github.com/james-dewes/launch-sight/blob/master/launch%20sight%20logo%20small.png)
+<img src="launch%20sight%20logo%20small.png" align="right" />
 # Launch Sight 
 NASA Appathon 2016 project for the [Launch a Global Experience Challenge](https://2016.spaceappschallenge.org/challenges/space-station/launch-a-global-experience "Global Experience Challenge")
 
