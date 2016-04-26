@@ -12,7 +12,7 @@ Creating a low cost, immersive experience of a rocket launch, combining sound, v
 |**Item**|**Price (£)**|**Supplier**|
 |----|---------:|--------|----|
 |Arduino Uno|8.5|[Amazon](https://www.amazon.co.uk/gp/product/B00PHY3HH2/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)|
-|Bluetooth Module For Arduino|7.99|[](https://www.amazon.co.uk/gp/product/B00PL7SNQK/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)|
+|Bluetooth Module For Arduino|7.99|[Amazon](https://www.amazon.co.uk/gp/product/B00PL7SNQK/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)|
 |Rasberry Pi B+|17.99|[RS Components](http://uk.rs-online.com/web/p/processor-microcontroller-development-kits/8111284/)|
 |Rasberry Pi Wireless Adapter|5.99|[RS Components](http://uk.rs-online.com/web/p/wireless-adapters/8920012/)|
 |Rasberry Pi Power Pack|6.29|[RS Components](http://uk.rs-online.com/web/p/plug-in-power-supply/9098135/)|
