@@ -1,11 +1,11 @@
-<img src="launch%20sight%20logo%20small.png" align="right" />
+<img src="image_files/launch%20sight%20logo%20small.png" align="right" />
 # Launch Sight 
 NASA Appathon 2016 project for the [Launch a Global Experience Challenge](https://2016.spaceappschallenge.org/challenges/space-station/launch-a-global-experience "Global Experience Challenge")
 
-Creating a low cost, immersive experience of a rocket launch, combining sound, vibration, pressure, wind and 360 video, designed as if the user were observing the launch from only a few miles away and controled by an easy to use aplication.
+Creating a low cost, immersive experience of a rocket launch, combining sound, vibration, pressure, wind and 360 video, designed as if the user were observing the launch from only a few miles away and controlled by an easy to use application.
 
 ##Who are Launch Sight?
-![the team](the team.jpg "Gavin, James, Ben, Jack")
+![the team](image_files/the team.jpg "Gavin, James, Ben, Jack")
 From left to right Gavin, James, Ben and Jack
 
 ##Who is the project for?
