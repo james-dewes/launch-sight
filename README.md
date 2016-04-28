@@ -16,9 +16,9 @@ From left to right Gavin, James, Ben and Jack
 |Arduino Uno|8.5|[Amazon](https://www.amazon.co.uk/gp/product/B00PHY3HH2/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)|
 |Bluetooth Module For Arduino|7.99|[Amazon](https://www.amazon.co.uk/gp/product/B00PL7SNQK/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)|
 |Rasberry Pi B+|17.99|[RS Components](http://uk.rs-online.com/web/p/processor-microcontroller-development-kits/8111284/)|
-|Rasberry Pi Wireless Adapter|5.99|[RS Components](http://uk.rs-online.com/web/p/wireless-adapters/8920012/)|
+|Rasberry Pi Wireless Adapter (Optional)|5.99|[RS Components](http://uk.rs-online.com/web/p/wireless-adapters/8920012/)|
 |Rasberry Pi Power Pack|6.29|[RS Components](http://uk.rs-online.com/web/p/plug-in-power-supply/9098135/)|
-|Bluetooth USB Adapter (Optional)|9.49|[Amazon](https://www.amazon.co.uk/gp/product/B00MTBZY4A/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)|
+|Bluetooth USB Adapter|9.49|[Amazon](https://www.amazon.co.uk/gp/product/B00MTBZY4A/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)|
 |3V Dc Motor|1.19|[Mallinson Electrical](http://www.mallinson-electrical.com/motor-3v-dc-13-000-rpm.html)|
 |2.1 Barrel Jack 9V Battery Snap|0.99|[Mallinson Electrical](http://www.mallinson-electrical.com/batteries-holders-130/pp3-9v-battery-clip-to-5-5-2-1mm-barrel-jack-for-arduino-and-cctv.html)|
 |Breadboard|2.25|[Mallinson Electrical](http://www.mallinson-electrical.com/400-point-solderless-prototyping-breadboard-white.html)|
