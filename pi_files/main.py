@@ -1,15 +1,22 @@
 '''launch sight code for raspberry pi'''
 def main():
-    import bluetooth
     import time
-    import winsound
+    import wind
+    import vibration
+    
     phone_name = "BenPhone"
-    rumble_pack_name ="HC-05"
     controller_name = "MOCUTE-032_B50-0407"
-
+    #set up the pyhsical effects
+	wind.setup()
+	vibration.setup()
+	shake.setup()
+	
+	#set up the controllers
+	phone.connect()
+	contoller.connect()
 
     phone_address = None
-    rumble_pack_address = None
+    e
     controller_address = None
 
     nearby_devices = bluetooth.discover_devices()
@@ -44,10 +51,10 @@ def main():
             print("Waiting for 20")
             time.sleep(20)
             rumble_s.send('1')
-            print("Playing wav!")
+            wind.start()
+            vibration.start()
 
-            #play the base wav file
-            winsound.PlaySound("launch bass boost long.wav", winsound.SND_FILENAME)
+            
             print("Stopping!")
             rumble_s.send('0')
             break
