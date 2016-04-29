@@ -13,7 +13,7 @@ From left to right Gavin, James, Ben and Jack
 ##Shopping list
 |**Item**|**Price (£)**|**Supplier**|
 |----|---------:|--------|----|
-|Arduino Uno|8.5|[Amazon](https://www.amazon.co.uk/gp/product/B00PHY3HH2/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)|
+|Arduino Uno|8.50|[Amazon](https://www.amazon.co.uk/gp/product/B00PHY3HH2/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)|
 |Bluetooth Module For Arduino|7.99|[Amazon](https://www.amazon.co.uk/gp/product/B00PL7SNQK/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)|
 |Rasberry Pi B+|17.99|[RS Components](http://uk.rs-online.com/web/p/processor-microcontroller-development-kits/8111284/)|
 |Rasberry Pi Wireless Adapter (Optional)|5.99|[RS Components](http://uk.rs-online.com/web/p/wireless-adapters/8920012/)|
@@ -24,13 +24,17 @@ From left to right Gavin, James, Ben and Jack
 |Breadboard|2.25|[Mallinson Electrical](http://www.mallinson-electrical.com/400-point-solderless-prototyping-breadboard-white.html)|
 |L293D Motor Controller|0.76|[Amazon](https://www.amazon.co.uk/gp/product/B011TZ05JK/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)|
 |Google Cardboard|3.99|[Amazon](https://www.amazon.co.uk/gp/product/B018QPYU4M/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)|
-|Subwoofer With Internal Amp|10|Gumtree|
-|USB Fan|4.2|[Amazon](https://www.amazon.co.uk/Desktop-Power-Laptop-Table-BuyinCoins/dp/B005GYU8H0/ref=sr_1_5?ie=UTF8&qid=1461668516&sr=8-5&keywords=usb+desk+fan)|
+|Subwoofer With Internal Amp|10.00|Gumtree|
+|USB Fan|4.20|[Amazon](https://www.amazon.co.uk/Desktop-Power-Laptop-Table-BuyinCoins/dp/B005GYU8H0/ref=sr_1_5?ie=UTF8&qid=1461668516&sr=8-5&keywords=usb+desk+fan)|
 |**Total**|**79.63**|
 
 
 ##To Do list
 
-##The video
+##The videos
+###Lower quality
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=luciFKDGsFQ" target="_blank">
 <img src="http://img.youtube.com/vi/luciFKDGsFQ/1.jpg" alt="Launch video for a Saturn V" width="240" height="180" border="10" /></a>
+###High quality
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=1X8peqikkRk" target="_blank">
+<img src="http://img.youtube.com/vi/1X8peqikkRk/1.jpg" alt="Launch video for a Saturn V" width="240" height="180" border="10" /></a>
