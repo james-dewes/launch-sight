@@ -2,75 +2,57 @@
 def main():
     import time
     import wind
-    import vibration
+    import bass
+    import lights
+    import rumble
+    import phone
     
-    phone_name = "BenPhone"
-    controller_name = "MOCUTE-032_B50-0407"
-    #set up the pyhsical effects
-	wind.setup()
-	vibration.setup()
-	shake.setup()
-	
-	#set up the controllers
-	phone.connect()
-	contoller.connect()
+    #reset the lights
+    lights.reset()
 
-    phone_address = None
-    e
-    controller_address = None
+    #set up the control
+    lights.stop()
 
-    nearby_devices = bluetooth.discover_devices()
-    ##find device addresses
-    for bdaddr in nearby_devices:
-        if phone_name == bluetooth.lookup_name( bdaddr ):
-            phone_address = bdaddr
-            print("Phone found...")
+    #set up the effects
+    lights.warn()
+    try:
+        wind.setup()
+        wind_state = "go"
+    except:
+        lights.stop()    
+        wind_state = "no-go"
 
-        if rumble_pack_name == bluetooth.lookup_name( bdaddr ):
-            rumble_pack_address = bdaddr
-            print("Rumble pack found...")
+    lights.warn()
+    try:
+        rumble.setup()
+        rumble_state = "go"
+    except:
+        lights.stop()
+        rumble_state = "no-go"
 
-        if controller_name == bluetooth.lookup_name( bdaddr ):
-            controller_address = bdaddr
-            print("Controller found")
-        
+    lights.warn()
+    try:
+         bass.setup()
+         bass_state = "go"
+    except:
+         lights.stop()
+	 bass_state = "no-go"
 
-    while 1:
-        text = input("Enter start to continue, or quit to finish...")
-        #some sort of exit code
-        if text == "quit":
-            s.send(text)
-            break
+    ##run the effects
+    lights.go()
+    time.sleep(20)
+    lights.launch()
+    if wind_state == "go":wind.start()
+    if rumble_state == "go":rumble.start()
+    if bass_state == "go":bass.start()
+    #just for testing
+    time.sleep(20)
 
-    #Did the phone tell us to start?
-        port2 = 1
-        if text == "start":
-        #send a message to the rumble pack
-            rumble_s = bluetooth.BluetoothSocket( bluetooth.RFCOMM )
-            rumble_s.connect((rumble_pack_address, port2))
-            print("Waiting for 20")
-            time.sleep(20)
-            rumble_s.send('1')
-            wind.start()
-            vibration.start()
-
-            
-            print("Stopping!")
-            rumble_s.send('0')
-            break
-
-                
-
-
-
-    else:
-        print("Phone not found...")
-##Flash red or something
-#None
-
-
-
-
+    ##stop the effects
+    lights.reset()
+    if wind_state == "go":wind.stop()
+    if rumble_state == "go":rumble.stopt()
+    if bass_state == "go": bass.stop()
 
 
 if __name__ == '__main__':main()

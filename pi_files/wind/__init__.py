@@ -1,5 +1,5 @@
 __author__ = 'James'
-import RPi.GPIO as gpio
+import RPi.GPIO as GPIO
 def setup():
     try:
         GPIO.setmode(GPIO.BCM)
@@ -7,26 +7,28 @@ def setup():
         #21 is not used by the PyGlow on the Pi  B
         GPIO.setup(21, GPIO.OUT)
         return True
-    except Exception:
-        raise Exception("unable to set up")
+    except Exception as error:
+        print(error)
+        #raise Exception("unable to set up" + repr(error))
         return False
 
 
 def start():
     #start the fan
     try:
-        GPIO.output(port_or_pin, 1)
+        GPIO.output(21, 1)
         return True
-    except Exception:
+    except:
         raise Exception("unable to start")
         return False
 
 def stop():
     #stop the fan
     try:
-        GPIO.output(port_or_pin, 0)
+        GPIO.output(21, 0)
+        GPIO.cleanup()
         return True
-    except Exception:
+    except:
         raise Exception("unable to stop")
         return False
 
