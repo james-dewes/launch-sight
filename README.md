@@ -33,8 +33,29 @@ INTERACTIVE MUSEUM - By taking the modules and recreating them with 3D printing 
 |USB Fan|4.20|[Amazon](https://www.amazon.co.uk/Desktop-Power-Laptop-Table-BuyinCoins/dp/B005GYU8H0/ref=sr_1_5?ie=UTF8&qid=1461668516&sr=8-5&keywords=usb+desk+fan)|
 |**Total**|**79.63**|
 
+You can make it cheaper! Our fan was broken electrical waste, as was our subwoofer. While not advisable, you can solder the batteries in place, there are many alternatives to a breadboard including soldering components directly to the L293S chip. Using a phone charger means you don't have to have a separate power supply for the Pi, chopping the build down to just £50 and if you are like us, you probably have a few of these parts already, making the whole lot cost even less.
 
 ##To Do list
+While this is not a how to, it covers some of things we had did for our build. It does not include the visual effects
+
+* [Assemble motor and controller](http://www.instructables.com/id/Arduino-Control-DC-Motor-via-Bluetooth/)
+* Attach Bluetooth controller
+* Test running motor via Bluetooth
+* Get subwoofer working (it was junk after all)
+* Get fan working
+* [Build motor controller for fan](https://www.npmjs.com/package/pi-motor)
+* Install core code on Raspberry Pi
+* Test remote
+* Test Pi output
+* Install the app
+* Program the NFC in cardboard to open the app
+* Strap subwoofer to a chair
+* Connect the sub
+* Point the fan in the right direction
+* Run Python file main.py
+* Put your NFC enabled phone in the Cardbaord
+* Test full rig
+
 
 ##The videos
 ###Lower quality
