@@ -9,6 +9,11 @@ Creating a low cost, immersive experience of a rocket launch, combining sound, v
 From left to right Gavin, James, Ben and Jack
 
 ##Who is the project for?
+Aimed towards people who cannot make it to a launch in person Launch Sight gives an affordable experience for anyone to enjoy.
+
+EDUCATION - The idea behind Launch Sight's implementation is that it can be used in the education system as a project aimed to spark an interest in Science, Technology, Engineering and Maths. This project is great for small teams to work together designing and creating their own launch experience with the need for only a few resources (and plenty of cardboard). Launch Sight, when used as a school project would enable students to enhance their problem solving skills and creativity as well as giving them an opportunity to learn how to code.
+
+INTERACTIVE MUSEUM - By taking the modules and recreating them with 3D printing you are able to create a long lasting solution perfect for an interactive or life sciences museum. Launch Sight in museums would mean anyone around the world can be at a launch. Whether they experience the Apollo 11 or the SLS, the experience is personal. Each time is different, making it a wonderful attraction to revisit.
 
 ##Shopping list
 |**Item**|**Price (£)**|**Supplier**|
