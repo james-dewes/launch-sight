@@ -1,6 +1,6 @@
 <img src="image_files/launch%20sight%20logo%20small.png" align="right" />
 # Launch Sight 
-NASA Appathon 2016 project for the [Launch a Global Experience Challenge](https://2016.spaceappschallenge.org/challenges/space-station/launch-a-global-experience "Global Experience Challenge")
+NASA Appathon 2016 project for the [Launch a Global Experience Challenge](https://2016.spaceappschallenge.org/challenges/space-station/launch-a-global-experience "Global Experience Challenge").
 Winner of the York NASA Space Apps Challenge, Kennedy Space Center Apps Challenge Category winners and Kennedy Space Center Space Apps Challenge 2016 overall challenge award.
 
 Creating a low cost, immersive experience of a rocket launch, combining sound, vibration, pressure, wind and 360 video, designed as if the user were observing the launch from only a few miles away and controlled by an easy to use application.
