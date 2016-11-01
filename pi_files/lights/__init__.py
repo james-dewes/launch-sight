@@ -1,4 +1,4 @@
-__author__ = 'James'
+__author__ = 'James Dewes'
 import piglow
 from time import sleep
 piglow.auto_update = True
