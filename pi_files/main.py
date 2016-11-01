@@ -13,7 +13,7 @@ def main():
     #set up the control
     lights.stop()
 
-    #set up the effects
+    #set up the effects (go, no-go list)
     lights.warn()
     try:
         wind.setup()
@@ -24,7 +24,7 @@ def main():
 
     lights.warn()
     try:
-        rumble.setup()
+        rumble = rumble()
         rumble_state = "go"
     except:
         lights.stop()
@@ -32,7 +32,7 @@ def main():
 
     lights.warn()
     try:
-         bass.setup()
+         bass = bass()
          bass_state = "go"
     except:
          lights.stop()
