@@ -1,0 +1,2 @@
+Bluez: https://github.com/karulis/pybluez
+RPi.GPIO
