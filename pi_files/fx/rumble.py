@@ -1,7 +1,7 @@
 __author__ = 'James Dewes'
 
 
-class rumble:
+class Rumble:
     def __init__(self):
         try:
             import bluetooth
