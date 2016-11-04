@@ -1,7 +1,7 @@
 __author__ = 'James Dewes'
 
 
-class lights:
+class Lights:
     def __ini__(self):
         self.brightness = 50
         try:

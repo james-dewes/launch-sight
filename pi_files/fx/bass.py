@@ -1,5 +1,6 @@
-class bass:
+class Bass:
     __author__ = 'James Dewes'
+
     def __init__(self):
         try:
             from pygame.mixer import Sound
