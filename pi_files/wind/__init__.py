@@ -1,34 +1,37 @@
-__author__ = 'James'
-import RPi.GPIO as GPIO
-def setup():
-    try:
-        GPIO.setmode(GPIO.BCM)
-        GPIO.setwarnings(False)
-        #21 is not used by the PyGlow on the Pi  B
-        GPIO.setup(21, GPIO.OUT)
-        return True
-    except Exception as error:
-        print(error)
-        #raise Exception("unable to set up" + repr(error))
-        return False
+__author__ = 'James Dewes'
 
 
-def start():
-    #start the fan
-    try:
-        GPIO.output(21, 1)
-        return True
-    except:
-        raise Exception("unable to start")
-        return False
+class wind:
+    def __int__(self, pin):
+        self.pin = pin
+        try:
+            import RPi.GPIO as GPIO
+        except RuntimeError:
+            print("Unable to import GPIO")
+            raise Exception("Unable to import GPIO")
 
-def stop():
-    #stop the fan
-    try:
-        GPIO.output(21, 0)
-        GPIO.cleanup()
-        return True
-    except:
-        raise Exception("unable to stop")
-        return False
+        try:
+            GPIO.setmode(GPIO.BCM)
+            GPIO.setwarnings(False)
+            #21 is not used by the PyGlow on the Pi  B
+            GPIO.setup(self.pin, GPIO.OUT)
+        except Exception as error:
+            print(error)
+            raise Exception("unable to set up" + repr(error))
+
+    def start(self):
+        #start the fan
+        try:
+            GPIO.output(self.pin, 1)
+        except:
+            raise Exception("unable to start")
+
+
+    def stop(self):
+        #stop the fan
+        try:
+            GPIO.output(self.pin, 0)
+            GPIO.cleanup()
+        except:
+            raise Exception("unable to stop")
 
