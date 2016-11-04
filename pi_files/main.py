@@ -36,15 +36,19 @@ def main():
          bass_state = "go"
     except:
          lights.stop()
-	 bass_state = "no-go"
+    	 bass_state = "no-go"
 
     ##run the effects
     lights.go()
     time.sleep(20)
     lights.launch()
-    if wind_state == "go":wind.start()
-    if rumble_state == "go":rumble.start()
-    if bass_state == "go":bass.start()
+    if wind_state == "go":
+        wind.start()
+    if rumble_state == "go":
+        rumble.start()
+    if bass_state == "go":
+        bass.start()
+        
     #just for testing
     time.sleep(20)
 
