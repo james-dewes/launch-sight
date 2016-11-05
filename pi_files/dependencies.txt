@@ -1,2 +1,3 @@
-Bluez: https://github.com/karulis/pybluez
+python-bluez: https://github.com/karulis/pybluez
 RPi.GPIO
+python-pygame

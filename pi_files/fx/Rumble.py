@@ -1,10 +1,9 @@
-__author__ = 'James Dewes'
-
-
 class Rumble:
+    __author__ = 'James Dewes'
     def __init__(self):
         try:
             import bluetooth
+            self.bluetooth = bluetooth
         except RuntimeError:
             print("Unable to import blutooth. bluetooth module not installed?")
             raise Exception("Unable to import blutooth. bluetooth module not installed?")
@@ -13,11 +12,11 @@ class Rumble:
         self.server_socket = None
         self.rumble_pack_name = "HC-05"
         try:
-
+            flag = 0
             for retry in range(0, 5):
-                self.nearby_devices = bluetooth.discover_devices()
-                for bdaddr in nearby_devices:
-                    if rumble_pack_name == bluetooth.lookup_name(bdaddr):
+                self.nearby_devices = self.bluetooth.discover_devices()
+                for bdaddr in self.nearby_devices:
+                    if self.rumble_pack_name == self.bluetooth.lookup_name(bdaddr):
                         self.rumble_pack_address = bdaddr
                         print("found rumble_pack")
                         break
@@ -31,7 +30,7 @@ class Rumble:
 
     def start(self):
         port = 1
-        self.server_socket = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
+        self.server_socket = self.bluetooth.BluetoothSocket(self.bluetooth.RFCOMM)
         self.server_socket.connect((self.rumble_pack_address,port))
         self.server_socket.send("1")
 

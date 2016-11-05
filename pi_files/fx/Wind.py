@@ -1,8 +1,6 @@
-__author__ = 'James Dewes'
-
-
-class wind:
-    def __int__(self, pin):
+class Wind:
+    __author__ = 'James Dewes'
+    def __int__(self, pin=21):
         self.pin = pin
         try:
             import RPi.GPIO as GPIO

@@ -3,6 +3,7 @@ class Bass:
 
     def __init__(self):
         try:
+            import pygame.mixer
             from pygame.mixer import Sound
         except RuntimeError:
             print("Unable to import pygame mixer sound")
@@ -10,10 +11,10 @@ class Bass:
 
         self.soundfile = "launch_bass_boost_long.wav"
         self.mixer = pygame.mixer.init() #instance of pygame
-        self.bass = Sound(soundfile)
+        self.bass = Sound(self.soundfile)
 
     def start(self):
-        state = bass.play()
+        state = self.bass.play()
         while state.get_busy() == True:
             continue
 
