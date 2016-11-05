@@ -1,11 +1,7 @@
 '''launch sight code for raspberry pi'''
 def main():
-    import time
-    import wind
-    import bass
-    import lights
-    import rumble
-    import phone
+    import fx
+    import control
     
     #reset the lights
     lights.reset()
