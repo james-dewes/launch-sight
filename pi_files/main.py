@@ -1,43 +1,34 @@
 '''launch sight code for raspberry pi'''
 def main():
-    import fx
-    import control
+    import fx, control, time
     
-    #reset the lights
-    lights.reset()
-
-    #set up the control
-    lights.stop()
-
     #set up the effects (go, no-go list)
-    lights.warn()
+    
     try:
-        wind.setup()
+        wind = fx.Wind()
         wind_state = "go"
+        print("wind go")
     except:
-        lights.stop()    
         wind_state = "no-go"
+        print("wind no-go")
 
-    lights.warn()
     try:
-        rumble = rumble()
+        rumble = fx.Rumble()
         rumble_state = "go"
+        print("rumble go")
     except:
-        lights.stop()
         rumble_state = "no-go"
+        print("rumble no-go")
 
-    lights.warn()
     try:
-         bass = bass()
+         bass = fx.Bass()
+         print("bass go")
          bass_state = "go"
     except:
-        lights.stop()
         bass_state = "no-go"
+        print("bass no-go")
 
     ##run the effects
-    lights.go()
-    time.sleep(20)
-    lights.launch()
     if wind_state == "go":
         wind.start()
     if rumble_state == "go":
@@ -49,7 +40,6 @@ def main():
     time.sleep(20)
 
     ##stop the effects
-    lights.reset()
     if wind_state == "go":
         wind.stop()
     if rumble_state == "go":
