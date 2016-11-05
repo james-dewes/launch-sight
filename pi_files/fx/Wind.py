@@ -52,22 +52,22 @@ class Wind:
         self.WaitTime = 10 / float(1000)
 
 
-def start(self, StepDir=1):  # Start main loop
-    StepCounter = 0
-    while True:
-        for pin in range(0, 4):
-            xpin = selfStepPins[pin]
-            if self.Seq[StepCounter][pin] != 0:
-                self.GPIO.output(xpin, True)
-            else:
-                self.GPIO.output(xpin, False)
-                self.StepCounter += StepDir
+    def start(self, StepDir=1):  # Start main loop
+        StepCounter = 0
+        while True:
+            for pin in range(0, 4):
+                xpin = selfStepPins[pin]
+                if self.Seq[StepCounter][pin] != 0:
+                    self.GPIO.output(xpin, True)
+                else:
+                    self.GPIO.output(xpin, False)
+                    self.StepCounter += StepDir
 
-        # If we reach the end of the sequence
-        # start again
-        if (StepCounter >= StepCount):
-            StepCounter = 0
-        if (StepCounter < 0):
-            StepCounter = self.StepCount + StepDir
+            # If we reach the end of the sequence
+            # start again
+            if (StepCounter >= StepCount):
+                StepCounter = 0
+            if (StepCounter < 0):
+                StepCounter = self.StepCount + StepDir
 
-        self.time.sleep(WaitTime)
+            self.time.sleep(WaitTime)
