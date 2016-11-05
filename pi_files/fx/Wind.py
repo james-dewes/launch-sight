@@ -1,5 +1,5 @@
 #!/usr/bin/python
-#--------------------------------------
+# --------------------------------------
 #    ___  ___  _ ____
 #   / _ \/ _ \(_) __/__  __ __
 #  / , _/ ___/ /\ \/ _ \/ // /
@@ -22,58 +22,52 @@
 class Wind:
     def ___init__(self):
         # Import required libraries
-        import sys
         import time
+        self.time = time
         import RPi.GPIO as GPIO
+
         self.GPIO = GPIO
         self.GPIO.setmode(GPIO.BCM)
 
         # GPIO17,GPIO22,GPIO23,GPIO24
-        StepPins = [17,22,23,24]
+        StepPins = [17, 22, 23, 24]
 
         # Set all pins as output
         for pin in StepPins:
-          self.GPIO.setup(pin,self.GPIO.OUT)
-          self.GPIO.output(pin, False)
+            self.GPIO.setup(pin, self.GPIO.OUT)
+            self.GPIO.output(pin, False)
 
         # Define advanced sequence
         # as shown in manufacturers datasheet
-        self.Seq = [[1,0,0,1],
-               [1,0,0,0],
-               [1,1,0,0],
-               [0,1,0,0],
-               [0,1,1,0],
-               [0,0,1,0],
-               [0,0,1,1],
-               [0,0,0,1]]
+        self.Seq = [[1, 0, 0, 1],
+                    [1, 0, 0, 0],
+                    [1, 1, 0, 0],
+                    [0, 1, 0, 0],
+                    [0, 1, 1, 0],
+                    [0, 0, 1, 0],
+                    [0, 0, 1, 1],
+                    [0, 0, 0, 1]]
 
         self.StepCount = len(Seq)
+        self.WaitTime = 10 / float(1000)
 
 
-     = 1 # Set to 1 or 2 for clockwise
-                # Set to -1 or -2 for anti-clockwise
-
-     WaitTime = 10/float(1000)
-
-    # Initialise variables
+def start(self, StepDir=1):  # Start main loop
     StepCounter = 0
+    while True:
+        for pin in range(0, 4):
+            xpin = selfStepPins[pin]
+            if self.Seq[StepCounter][pin] != 0:
+                self.GPIO.output(xpin, True)
+            else:
+                self.GPIO.output(xpin, False)
+                self.StepCounter += StepDir
 
-    def start(self, StepDir 1):
-        # Start main loop
-        while True:
-            for pin in range(0, 4):
-                xpin = selfStepPins[pin]
-                if Seq[StepCounter][pin]!=0:
-                    self.GPIO.output(xpin, True)
-                else:
-                    self.GPIO.output(xpin, False)
-                    StepCounter += StepDir
+        # If we reach the end of the sequence
+        # start again
+        if (StepCounter >= StepCount):
+            StepCounter = 0
+        if (StepCounter < 0):
+            StepCounter = self.StepCount + StepDir
 
-            # If we reach the end of the sequence
-            # start again
-            if (StepCounter>=StepCount):
-                break;
-            if (StepCounter<0):
-                StepCounter = StepCount+StepDir
-
-            time.sleep(WaitTime)
+        self.time.sleep(WaitTime)
