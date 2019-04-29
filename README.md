@@ -1,5 +1,5 @@
-#Launch Sight
 <img src="image_files/launch%20sight%20logo%20small.png" align="right" />
+# Launch Sight
 NASA Appathon 2016 project for the [Launch a Global Experience Challenge](https://2016.spaceappschallenge.org/challenges/space-station/launch-a-global-experience "Global Experience Challenge").
 Winner of the York NASA Space Apps Challenge, Kennedy Space Center Apps Challenge Category winners and Kennedy Space Center Space Apps Challenge 2016 overall challenge award.
 
@@ -18,22 +18,22 @@ INTERACTIVE MUSEUM - By taking the modules and recreating them with 3D printing 
 
 ## Shopping list
 
-| **Item** | **Price (£)** | **Supplier** |
-| ---- | ---------: | -------- | ---- |
-| Arduino Uno | 8.50 | [Amazon](https://www.amazon.co.uk/gp/product/B00PHY3HH2/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1) |
-| Bluetooth Module For Arduino|7.99|[Amazon](https://www.amazon.co.uk/gp/product/B00PL7SNQK/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)|
-| Rasberry Pi B+|17.99|[RS Components](http://uk.rs-online.com/web/p/processor-microcontroller-development-kits/8111284/)|
-| Rasberry Pi Wireless Adapter (Optional)|5.99|[RS Components](http://uk.rs-online.com/web/p/wireless-adapters/8920012/)|
-| Rasberry Pi Power Pack|6.29|[RS Components](http://uk.rs-online.com/web/p/plug-in-power-supply/9098135/)|
-| Bluetooth USB Adapter|9.49|[Amazon](https://www.amazon.co.uk/gp/product/B00MTBZY4A/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)|
-| 3V Dc Motor|1.19|[Mallinson Electrical](http://www.mallinson-electrical.com/motor-3v-dc-13-000-rpm.html)|
-| 2.1 Barrel Jack 9V Battery Snap|0.99|[Mallinson Electrical](http://www.mallinson-electrical.com/batteries-holders-130/pp3-9v-battery-clip-to-5-5-2-1mm-barrel-jack-for-arduino-and-cctv.html)|
-| Breadboard|2.25|[Mallinson Electrical](http://www.mallinson-electrical.com/400-point-solderless-prototyping-breadboard-white.html)|
-| L293D Motor Controller|0.76|[Amazon](https://www.amazon.co.uk/gp/product/B011TZ05JK/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)|
-| Google Cardboard|3.99|[Amazon](https://www.amazon.co.uk/gp/product/B018QPYU4M/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)|
-| Subwoofer With Internal Amp|10.00|Gumtree|
-| USB Fan|4.20|[Amazon](https://www.amazon.co.uk/Desktop-Power-Laptop-Table-BuyinCoins/dp/B005GYU8H0/ref=sr_1_5?ie=UTF8&qid=1461668516&sr=8-5&keywords=usb+desk+fan)|
-| **Total** | **79.63** |
+|**Item** | **Price(£)** | **Supplier**
+|---------|-------------:|-------------
+|Arduino Uno | 8.50 | [Amazon](https://www.amazon.co.uk/gp/product/B00PHY3HH2/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)
+| Bluetooth Module For Arduino | 7.99 | [Amazon](https://www.amazon.co.uk/gp/product/B00PL7SNQK/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)
+| Rasberry Pi B+ | 17.99 | [RS Components](http://uk.rs-online.com/web/p/processor-microcontroller-development-kits/8111284/)
+| Rasberry Pi Wireless Adapter (Optional) | 5.99 | [RS Components](http://uk.rs-online.com/web/p/wireless-adapters/8920012/)
+| Rasberry Pi Power Pack |6.29 | [RS Components](http://uk.rs-online.com/web/p/plug-in-power-supply/9098135/)
+| Bluetooth USB Adapter | 9.49 | [Amazon](https://www.amazon.co.uk/gp/product/B00MTBZY4A/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)
+| 3V Dc Motor | 1.19 | [Mallinson Electrical](http://www.mallinson-electrical.com/motor-3v-dc-13-000-rpm.html)
+| 2.1 Barrel Jack 9V Battery Snap | 0.99 | [Mallinson Electrical](http://www.mallinson-electrical.com/batteries-holders-130/pp3-9v-battery-clip-to-5-5-2-1mm-barrel-jack-for-arduino-and-cctv.html)
+| Breadboard | 2.25 | [Mallinson Electrical](http://www.mallinson-electrical.com/400-point-solderless-prototyping-breadboard-white.html)
+| L293D Motor Controller | 0.76 | [Amazon](https://www.amazon.co.uk/gp/product/B011TZ05JK/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)
+| Google Cardboard | 3.99 | [Amazon](https://www.amazon.co.uk/gp/product/B018QPYU4M/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
+| Subwoofer With Internal Amp | 10.00 |Gumtree
+| USB Fan|4.20|[Amazon](https://www.amazon.co.uk/Desktop-Power-Laptop-Table-BuyinCoins/dp/B005GYU8H0/ref=sr_1_5?ie=UTF8&qid=1461668516&sr=8-5&keywords=usb+desk+fan)
+| **Total** | **79.63** 
 
 You can make it cheaper! Our fan was broken electrical waste, as was our subwoofer. While not advisable, you can solder the batteries in place, there are many alternatives to a breadboard including soldering components directly to the L293S chip. Using a phone charger means you don't have to have a separate power supply for the Pi, chopping the build down to just £50 and if you are like us, you probably have a few of these parts already, making the whole lot cost even less.
 
