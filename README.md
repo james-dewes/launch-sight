@@ -6,7 +6,7 @@ Winner of the York NASA Space Apps Challenge, Kennedy Space Center Apps Challeng
 Creating a low cost, immersive experience of a rocket launch, combining sound, vibration, pressure, wind and 360 video, designed as if the user were observing the launch from only a few miles away and controlled by an easy to use application.
 
 ## Who are Launch Sight?
-![the team](image_files/the team.jpg "Gavin, James, Ben, Jack")
+![the team](image_files/the%20team.jpg "Gavin, James, Ben, Jack")
 From left to right Gavin, James, Ben and Jack
 
 ## Who is the project for?
