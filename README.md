@@ -1,5 +1,5 @@
-<img src="image_files/launch%20sight%20logo%20small.png" align="right" />
 # Launch Sight
+<img src="image_files/launch%20sight%20logo%20small.png" align="right" />
 NASA Appathon 2016 project for the [Launch a Global Experience Challenge](https://2016.spaceappschallenge.org/challenges/space-station/launch-a-global-experience "Global Experience Challenge").
 Winner of the York NASA Space Apps Challenge, Kennedy Space Center Apps Challenge Category winners and Kennedy Space Center Space Apps Challenge 2016 overall challenge award.
 
